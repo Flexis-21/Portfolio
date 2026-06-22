@@ -1,0 +1,116 @@
+:root {
+  /* Couleurs principales */
+  --color-bg : #111827;
+  --color-surface: #1F2937;
+  --color-primary: #10B981;
+  --color-primary-hover: #059669;
+  --color-accent: #34D399;
+
+  /* Texte */
+  --color-text: #F9FAFB;
+  --color-text-secondary: #D1D5DB;
+  --color-text-muted: #9CA3AF;
+
+  /* Bordures */
+  --color-border: #374151;
+
+  /* États */
+  --color-success: #22C55E;
+  --color-warning: #F59E0B;
+  --color-error: #EF4444;
+
+  /* Ombres */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.15);
+  --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.25);
+  --shadow-lg: 0 12px 30px rgba(0, 0, 0, 0.35);
+
+  /* Rayons */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+
+  /* Espacements */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 4rem;
+
+  /* Transitions */
+  --transition: all 0.3s ease;
+
+  /* Dégradé */
+  --gradient-bg: linear-gradient(
+    135deg,
+    #111827 0%,
+    #1F2937 60%,
+    #10B981 100%
+  );
+}
+body {
+  background: var(--gradient-bg);
+  color: var(--color-text);
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  width: fit-content;
+  margin: 20px auto;
+  padding: 12px 28px;
+
+  background: rgba(31, 41, 55, 0.85);
+  backdrop-filter: blur(10px);
+
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+
+  box-shadow: var(--shadow-md);
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  position: relative;
+  text-decoration: none;
+  color: var(--color-text-secondary);
+  font-size: 1rem;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.navbar a:hover {
+  color: var(--color-accent);
+}
+
+.navbar a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+
+  width: 0;
+  height: 2px;
+
+  background: var(--color-primary);
+  transition: width 0.3s ease;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+.navbar a.active {
+  color: var(--color-primary);
+  font-weight: 600;
+}
