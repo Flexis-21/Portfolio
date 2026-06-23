@@ -1,0 +1,108 @@
+css possible : 
+
+:root {
+  /* Fond */
+  --color-bg: #070A12;
+  --color-surface: rgba(255, 255, 255, 0.06);
+
+  /* Couleurs néon */
+  --color-primary: #00E5FF;
+  --color-primary-hover: #00B8D4;
+  --color-accent: #7CFFB2;
+
+  /* Texte */
+  --color-text: #F8FAFC;
+  --color-text-secondary: #B6C2D9;
+  --color-text-muted: #7C8AA5;
+
+  /* Bordures */
+  --color-border: rgba(255, 255, 255, 0.12);
+
+  /* Ombres */
+  --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.5);
+
+  /* Transitions */
+  --transition: all 0.3s ease;
+
+  /* Texte */
+  --text-size: 1rem;
+
+  /* Fond animé léger */
+  --gradient-bg: radial-gradient(
+    circle at top,
+    #0B1020 0%,
+    #070A12 60%,
+    #05060B 100%
+  );
+}
+
+body {
+  background: var(--gradient-bg);
+  color: var(--color-text);
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+  width: fit-content;
+  margin: 25px auto;
+  padding: 12px 28px;
+
+  background: var(--color-surface);
+  backdrop-filter: blur(15px);
+
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+
+  box-shadow: var(--shadow-md);
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--color-text-secondary);
+  font-size: var(--text-size);
+  font-weight: 500;
+  position: relative;
+  transition: var(--transition);
+}
+
+/* Hover néon */
+.navbar a:hover {
+  color: var(--color-primary);
+  text-shadow: 0 0 10px rgba(0, 229, 255, 0.6);
+}
+
+/* underline animé */
+.navbar a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+
+  width: 0;
+  height: 2px;
+
+  background: var(--color-primary);
+  box-shadow: 0 0 10px rgba(0, 229, 255, 0.6);
+
+  transition: width 0.3s ease;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+.navbar a.active {
+  color: var(--color-primary);
+}
