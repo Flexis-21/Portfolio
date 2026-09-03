@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stage Owlnext - Portfolio-DH</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <ul>
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="cv.html">CV</a></li>
+    <li><a href="projets.html" class="active">Projets</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<a href="projets.html" class="back-link">&larr; Retour aux projets</a>
+
+<h1>Stage chez Owlnext</h1>
+<p class="subtitle">01/06/2026 – 03/07/2026 · BTS SIO</p>
+
+<div class="project-detail">
+
+  <h2>Présentation de l'entreprise</h2>
+  <p><strong>Owlnext</strong> est une entreprise de conseil en systèmes et logiciels informatiques, basée sur un site unique au Golf de Quetigny (21800). Elle développe des applications web et mobiles sur mesure, fait de l'AMOA et réalise des audits de systèmes d'information et de cybersécurité.</p>
+  <ul>
+    <li>Environ 12 salariés, dont 2 alternants</li>
+    <li>Chiffre d'affaires d'environ 548 000 €</li>
+    <li>Site web : <a href="https://owlnext.fr/" target="_blank">owlnext.fr</a> - présence sur LinkedIn</li>
+  </ul>
+
+  <h2>L'équipe</h2>
+  <p>L'équipe est organisée en BU (business units) projet, en mode agile. Elle regroupe 3 développeurs front-end, 3 back-end, 1 full-stack, 3 personnes en gestion de projet et 1 designer, auxquels s'ajoutent alternants et stagiaires. Les profils sont assez variés : certains ont 3 à 5 ans d'études derrière eux, d'autres sont arrivés par une formation directement en entreprise. Mon tuteur occupait le poste d'<strong>architecte solution</strong> : c'est lui qui validait les choix techniques sur les projets de l'équipe.</p>
+  <p>Chaque lundi, une réunion d'équipe permettait à tout le monde de faire un point sur l'avancement de la semaine. Dans une entreprise de conseil comme celle-ci, où les projets et les priorités changent vite selon les clients, ce point hebdomadaire est ce qui garde le collectif synchronisé.</p>
+
+  <h2>Missions principales effectuées</h2>
+
+  <h3>Mission 1 - Questionnaire d'audit cybersécurité (méthode EBIOS)</h3>
+  <p class="competency-tag">Compétence - Gérer le patrimoine informatique : « Exploiter des référentiels, normes et standards adoptés par le prestataire informatique »</p>
+  <p>Ma première mission a consisté à concevoir un questionnaire d'audit basé sur la méthode <strong>EBIOS Risk Manager</strong> de l'ANSSI, en m'appuyant aussi sur un rapport <strong>PASSI</strong> (Prestataire d'Audit SSI qualifié ANSSI) déjà existant dans l'entreprise. L'outil s'adresse aux collectivités publiques comme aux entreprises.</p>
+  <ul>
+    <li>3 questionnaires : Direction, DSI, Gestion de crise - 134 exigences EBIOS RM utilisées dans leur intégralité</li>
+    <li>Tableau structuré en 7 colonnes : Catégorie, Topic, Code (ex : <code>DIR-VM1</code>, <code>DSI-MT2</code>), Question, Description, Réponse, Embranchement</li>
+    <li>3 types de réponses : Oui/Non, champ libre, et une échelle de maturité à 5 niveaux (Maîtrisée, Formalisée et documentée, Partiellement structurée, Lacunaire, Hors périmètre)</li>
+    <li>Une réponse "Non" déclenche automatiquement une question bonus d'approfondissement avant de reprendre le fil du questionnaire</li>
+    <li>Génération automatique de fichiers Excel colorés selon le niveau de maturité</li>
+    <li>Une version allégée (Q-FREE) a aussi été produite, sur 10 thématiques</li>
+  </ul>
+  <div class="badges">
+    <span class="badge">Excel Calc</span>
+    <span class="badge">EBIOS</span>
+    <span class="badge">Cybersécurité</span>
+  </div>
+
+  <h3>Le questionnaire final</h3>
+  <p>Aperçu du questionnaire complet, réalisé sous Excel Calc, avec toutes les thématiques (Direction, DSI, Gestion de crise) et leurs versions v2.</p>
+  <div class="pdf-preview">
+    <iframe src="https://drive.google.com/file/d/1jupHv8SKBUjpu8G1FCI5UbLsLKaOvdD1/preview" title="Questionnaire EBIOS"></iframe>
+  </div>
+
+  <h3>Mission 2 - Landing page Sérén'IT</h3>
+  <p class="competency-tag">Compétence - Développer la présence en ligne de l'organisation : « Participer à la valorisation de l'image de l'organisation sur les médias numériques » et « Participer à l'évolution d'un site Web exploitant les données de l'organisation »</p>
+  <p>Ma seconde mission portait sur <strong>Sérén'IT</strong>, une landing page en français pour une plateforme de cybersécurité, développée en HTML/CSS/JavaScript vanilla et déployée sur GitHub Pages. Plusieurs allers-retours avec l'équipe UX ont rythmé le développement, notamment sur le responsive (mobile, tablette, desktop) : navbar, menu burger, tableau comparatif des offres, carrousel d'avis clients.</p>
+  <p><a href="https://owlnext-fr.github.io/serenit-landing-page/" target="_blank" rel="noopener">Voir la landing page en ligne &rarr;</a></p>
+  <div class="badges">
+    <span class="badge">HTML</span>
+    <span class="badge">CSS</span>
+    <span class="badge">JavaScript</span>
+  </div>
+
+  <h2>Activité ponctuelle notable</h2>
+  <p>Sur cette deuxième mission, j'ai travaillé en binôme avec une stagiaire UX, sur le même dépôt GitHub (pull/push partagés). Au-delà du développement pur, j'allais régulièrement l'aider sur diverses tâches quand elle en avait besoin. Ce fonctionnement à deux, avec du code et du design qui avancent ensemble sur un même repo, m'a fait toucher du doigt ce que c'est vraiment de bosser en équipe sur un projet - pas juste en théorie.</p>
+
+  <h2>Conclusion personnelle</h2>
+  <p>Ce stage m'a fait travailler sur deux registres assez différents : l'analyse de risques en cybersécurité d'un côté, le développement web de l'autre. La partie EBIOS a été la plus exigeante - construire une méthodologie d'audit complète prend du temps et demande de la rigueur, mais c'est aussi ce qui m'a le plus appris. Le questionnaire va directement servir à l'offre d'audit de l'entreprise, et la landing page Sérén'IT a renforcé sa présence en ligne. Au final, ce stage m'a conforté dans mon envie d'aller vers la cybersécurité pour la suite de mon parcours.</p>
+
+</div>
+
+</body>
+</html>
